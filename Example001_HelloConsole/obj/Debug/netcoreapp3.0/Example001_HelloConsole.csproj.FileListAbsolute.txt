@@ -1,0 +1,10 @@
+/Users/a1/Documents/Repo/Examples/Example001_HelloConsole/bin/Debug/netcoreapp3.0/Example001_HelloConsole.deps.json
+/Users/a1/Documents/Repo/Examples/Example001_HelloConsole/bin/Debug/netcoreapp3.0/Example001_HelloConsole.runtimeconfig.json
+/Users/a1/Documents/Repo/Examples/Example001_HelloConsole/bin/Debug/netcoreapp3.0/Example001_HelloConsole.runtimeconfig.dev.json
+/Users/a1/Documents/Repo/Examples/Example001_HelloConsole/bin/Debug/netcoreapp3.0/Example001_HelloConsole.dll
+/Users/a1/Documents/Repo/Examples/Example001_HelloConsole/bin/Debug/netcoreapp3.0/Example001_HelloConsole.pdb
+/Users/a1/Documents/Repo/Examples/Example001_HelloConsole/obj/Debug/netcoreapp3.0/Example001_HelloConsole.csprojAssemblyReference.cache
+/Users/a1/Documents/Repo/Examples/Example001_HelloConsole/obj/Debug/netcoreapp3.0/Example001_HelloConsole.AssemblyInfoInputs.cache
+/Users/a1/Documents/Repo/Examples/Example001_HelloConsole/obj/Debug/netcoreapp3.0/Example001_HelloConsole.AssemblyInfo.cs
+/Users/a1/Documents/Repo/Examples/Example001_HelloConsole/obj/Debug/netcoreapp3.0/Example001_HelloConsole.dll
+/Users/a1/Documents/Repo/Examples/Example001_HelloConsole/obj/Debug/netcoreapp3.0/Example001_HelloConsole.pdb
