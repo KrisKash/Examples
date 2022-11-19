@@ -7,8 +7,8 @@ namespace Test_Names
         static void Main(string[] args)
         {
             //Объединение строк
-            
-            Console.Write("Введите имя пользователя:");
+
+            Console.WriteLine("Введите имя пользователя:");
             string username = Console.ReadLine();
             string s3 = "Hello, ";
             string s4 = s3 + username;
