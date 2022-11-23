@@ -1,8 +1,4 @@
-﻿using Internal;
-using System.ComponentModel.DataAnnotations;
-using System.IO;
-using System.Text.RegularExpressions;
-using System;
+﻿using System;
 
 namespace Seminar3_Ex3
 {
@@ -25,17 +21,18 @@ namespace Seminar3_Ex3
             return result;
             }
 
-            double GetDistance (int x1, int y1, int x2, int y2)
+            double GetDistance (int xa, int ya, int xb, int yb)
             {
-               double distance = Match.Sqrt(Math.Pow (x2 - x1,2)+ Math.Pow(y2-y1,2));
+               double distance = Math.Sqrt(Math.Pow ((xb - xa),2)+ Math.Pow((yb-ya),2));
+               return distance;
             }
-            int x1 = getNumberFromUser("Введите X1:");
-            int y1 = getNumberFromUser("Введите Y1:");
-            int x2 = getNumberFromUser("Введите X2:");
-            int y2 = getNumberFromUser("Введите Y2:");
-            int distance = GetDistance (int x1, int y1, int x2, int y2);
+            int xa = getNumberFromUser("Введите X1:");
+            int ya = getNumberFromUser("Введите Y1:");
+            int xb = getNumberFromUser("Введите X2:");
+            int yb = getNumberFromUser("Введите Y2:");
+            double distance = GetDistance( xa,  ya,  xb,  yb);
             Console.WriteLine($"Расстояние между точками равно {distance} ");
-            
+        }    
 
     }
 }
