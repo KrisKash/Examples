@@ -22,20 +22,22 @@ namespace Seminar5_Ex32
                 return resultArray;
             }
 
-            int GetReplacementElement(int [] array)
+            int [] InverseArray(int [] array)
             {
-                int element = -1;
+                
                 for (int i = 0; i < array.Length; i++)
                 {
-                    element = element * i;
-                    resultArray = array[element[i]];
+                    array [i] = -array[i];
                 }
-                return resultArray;                
+                return array;                
             }
 
                         
-            void PrintArray(int [] array)
+            void PrintArray(int [] array, string NameOfArray)
             {
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine($"------{NameOfArray}-------- ");
+                Console.ResetColor();
                 Console.Write("[");
                 for (int i = 0; i < array.Length; i++)
                 {
@@ -48,12 +50,12 @@ namespace Seminar5_Ex32
                 Console.WriteLine("]");
             }
 
-            int [] array = GenerateRandomArray(4, -9, 9);
-            PrintArray(array);
+            int [] array = GenerateRandomArray(10, -100, 100);
+            PrintArray(array, "Исходный массив");
             Console.WriteLine();
-            int resultArray = GetReplacementElement(array);
-            Console.Write($" {array} => {resultArray},");
-            Console.WriteLine();
+            int [] InverstedArray = InverseArray(array);
+            PrintArray(array, "Инвертированный массив");
+            
         }
     }
 }
