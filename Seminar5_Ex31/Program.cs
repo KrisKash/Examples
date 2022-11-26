@@ -49,7 +49,7 @@ namespace Seminar5_Ex31
                 }
                 return sum;                
             } */
-            int GetSumOfNegativeOrPositeveElementsArray(int [] array, int direction = 1)
+            int GetSumOfNegativeOrPositeveElementsArray(int [] array, int direction)
             {
                 int sum = 0;
                 for (int i = 0; i < array.Length; i++)
