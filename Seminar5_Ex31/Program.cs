@@ -24,7 +24,7 @@ namespace Seminar5_Ex31
                 return resultArray;
             }
 
-            int GetSumOfPositiveElementsArray(int [] array)
+            /*int GetSumOfPositiveElementsArray(int [] array)
             {
                 int sum = 0;
                 for (int i = 0; i < array.Length; i++)
@@ -48,8 +48,19 @@ namespace Seminar5_Ex31
                     }
                 }
                 return sum;                
+            } */
+            int GetSumOfNegativeOrPositeveElementsArray(int [] array, int direction = 1)
+            {
+                int sum = 0;
+                for (int i = 0; i < array.Length; i++)
+                {
+                    if (array[i] * direction < 0)
+                    {
+                        sum += array[i];
+                    }
+                }
+                return sum;                
             }
-
 
             void PrintArray(int [] array)
             {
@@ -68,8 +79,10 @@ namespace Seminar5_Ex31
             int [] array = GenerateRandomArray(12, -9, 9);
             PrintArray(array);
             Console.WriteLine();
-            int sumOfPositive = GetSumOfPositiveElementsArray(array);
-            int sumOfNegative = GetSumOfNegativeElementsArray (array);
+            //int sumOfPositive = GetSumOfPositiveElementsArray(array);
+            //int sumOfNegative = GetSumOfNegativeElementsArray (array);
+            int sumOfPositive = GetSumOfNegativeOrPositeveElementsArray(array,1);
+            int sumOfNegative = GetSumOfNegativeOrPositeveElementsArray(array, -1);
             Console.Write($"Сумма положительных чисел данного массива = {sumOfPositive},");
             Console.WriteLine($"а сумма отрицательных чисел = {sumOfNegative} ");
             Console.WriteLine();
